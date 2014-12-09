@@ -1,0 +1,107 @@
+html {
+    color: hsla(0, 5%, 25%, 1.0);
+    background-color: hsla(0, 20%, 95%, 1.0);
+    font-family: 'Lato', sans-serif;
+    line-height: 2em;
+    padding: 2rem;
+    text-align: justify;
+}
+
+a {
+    color: hsla(0, 50%, 25%, 1.0);
+}
+a:visited {
+    color: hsla(0, 5%, 10%, 1.0);
+}
+a:hover {
+    color: hsla(0, 100%, 35%, 1.0);
+}
+a:active {
+    color: hsla(0, 100%, 50%, 1.0);
+}
+
+p {
+    margin: 0 0 2em 0;
+    padding: 0;
+}
+
+li {
+    margin: 0;
+}
+
+ul li {
+    padding: 0 0 1em 0;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Karma', serif;
+    font-weight: 800;
+    line-height: 1em;
+    margin: 0;
+    padding: 0;
+    margin-top: 3em;
+    margin-bottom: 1em;
+    text-align: left;
+}
+
+h1 {
+    font-size: 4.17rem;
+    margin-top: 0;
+}
+
+h2 {
+    font-size: 2.59rem;
+    margin-top: 1em;
+}
+
+h3 {
+    font-size: 1.61rem;
+}
+
+h4 {
+    font-size: 1rem;
+}
+
+@media (min-width: 500px) {
+    html {
+        font-size: 3vw;
+    }
+}
+@media (min-width: 1000px) {
+    html {
+        font-size: 30px;
+    }
+    .container {
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+}
+@media (max-width: 500px) {
+    html {
+        font-size: 15px;
+        padding: 1vw;
+    }
+}
+
+.subheader {
+    font-size: 1rem;
+    margin: 0;
+    padding: 0;
+    line-height: 1rem;
+    color: hsla(0, 5%, 25%, 1.0);
+    font-family: 'Lato', sans-serif;
+}
+.subheader .subheader-info {
+    display: inline-block;
+}
+
+.dropcap:first-letter {
+    float: left;
+    color: hsla(0, 40%, 25%, 1.0);
+    font-size: 4rem;
+    font-weight: 300;
+    line-height: 3rem;
+    padding-right: 0.2rem;
+    padding-top: 0.5rem;
+    
+}
