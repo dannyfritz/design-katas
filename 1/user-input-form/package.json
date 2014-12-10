@@ -1,0 +1,22 @@
+{
+  "name": "user-input-form",
+  "dependencies": {
+    "browserify": "^7.0.0",
+    "gulp": "^3.8.10",
+    "gulp-less": "^2.0.1",
+    "handlebars": "^2.0.0",
+    "hbsfy": "^2.2.1",
+    "jquery": "^2.1.1",
+    "npm-stare": "^1.0.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "stare": "npm-stare",
+    "build": "gulp"
+  },
+  "stare": {
+    "build": {
+      "path": "src"
+    }
+  }
+}
