@@ -1,0 +1,56 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700,300);
+form {
+  padding: 4rem;
+}
+v-field {
+  display: inline-block;
+  position: relative;
+}
+.v-field__label {
+  top: -0.2rem;
+  display: block;
+  position: absolute;
+  pointer-events: none;
+  padding: 0.5rem 1rem;
+  color: #cdcbcb;
+  transition: top 0.2s ease,
+		color 0.1s ease;
+}
+.v-field--active .v-field__label {
+  top: -2rem;
+  color: #343232;
+}
+.v-field__input {
+  display: block;
+  outline: solid 1px #000000;
+  outline-offset: 0;
+  border: none;
+  border-radius: 0;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+}
+v-address {
+  display: block;
+}
+v-creditcard {
+  display: block;
+}
+v-name {
+  display: block;
+}
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+html,
+body {
+  font-size: 18px;
+  font-family: 'Open Sans', sans-serif;
+}
+body {
+  background-color: #ffffff;
+}
