@@ -4,20 +4,42 @@
 @import "v-address";
 @import "v-creditcard";
 @import "v-name";
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700,300);
 
-html {
-	box-sizing: border-box;
-}
 *, *:before, *:after {
 	box-sizing: inherit;
 }
 
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700,300);
-html, body {
+html {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
 	font-size: 18px;
 	font-family: 'Open Sans', sans-serif;
 }
 
 body {
 	background-color: hsl(0, 0%, 100%);
+}
+
+button {
+	padding: 0.5rem 1rem;
+	margin: 0;
+	border: none;
+	border-radius: 0;
+	outline: solid 1px hsl(0, 0%, 60%);
+	background-color: hsl(0, 0%, 100%);
+	font-size: 1rem;
+	transition:
+		box-shadow 0.1s ease,
+		background-color 0.1s ease;
+}
+
+button:active {
+	background-color: hsl(0, 0%, 80%);
+}
+
+button:hover,
+button:focus {
+	box-shadow: @box-shadow-depth-2;
 }

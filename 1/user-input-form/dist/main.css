@@ -1,13 +1,31 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700,300);
 form {
-  padding: 4rem;
+  margin: 2rem;
+  padding: 2rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+.form__buttons {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding-top: 1rem;
 }
 v-field {
   display: inline-block;
   position: relative;
+  padding-top: 2rem;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+v-field:last-child {
+  padding-right: 0;
 }
 .v-field__label {
-  top: -0.2rem;
+  top: 1.8rem;
   display: block;
   position: absolute;
   pointer-events: none;
@@ -17,40 +35,78 @@ v-field {
 		color 0.1s ease;
 }
 .v-field--active .v-field__label {
-  top: -2rem;
+  top: 0.1rem;
   color: #343232;
 }
 .v-field__input {
+  width: 100%;
   display: block;
-  outline: solid 1px #000000;
+  outline: solid 1px #999999;
   outline-offset: 0;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   border: none;
   border-radius: 0;
   padding: 0.5rem 1rem;
   font-size: 1rem;
+  transition: box-shadow 0.2s ease;
+}
+.v-field__input:focus {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 v-address {
-  display: block;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 v-creditcard {
   display: block;
 }
 v-name {
-  display: block;
-}
-html {
-  box-sizing: border-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 *,
 *:before,
 *:after {
   box-sizing: inherit;
 }
-html,
-body {
+html {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
   font-size: 18px;
   font-family: 'Open Sans', sans-serif;
 }
 body {
   background-color: #ffffff;
+}
+button {
+  padding: 0.5rem 1rem;
+  margin: 0;
+  border: none;
+  border-radius: 0;
+  outline: solid 1px #999999;
+  background-color: #ffffff;
+  font-size: 1rem;
+  transition: box-shadow 0.1s ease, background-color 0.1s ease;
+}
+button:active {
+  background-color: #cccccc;
+}
+button:hover,
+button:focus {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }

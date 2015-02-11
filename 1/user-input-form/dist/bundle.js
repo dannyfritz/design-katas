@@ -10,13 +10,13 @@ form.$appendTo("body");
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
 
 },{"./views/formView.js":11,"./views/vue.js":12}],2:[function(require,module,exports){
-module.exports = '<input type="text" v-model="line1">\n<input type="text" v-model="line2">\n<input type="text" v-model="city">\n<input type="text" v-model="zip">\n<input type="text" v-model="state">\n';
+module.exports = '<v-field v-with="label: \'Address Line 1\', value: line1"></v-field>\n<v-field v-with="label: \'Address Line 2\', value: line2"></v-field>\n<v-field v-with="label: \'City\', value: city"></v-field>\n<v-field v-with="label: \'State\', value: state"></v-field>\n<v-field v-with="label: \'Zip\', value: zip"></v-field>\n';
 },{}],3:[function(require,module,exports){
 module.exports = '<input type="text" v-model="number">\n<input type="text" v-model="expiration">\n<input type="text" v-model="security">\n';
 },{}],4:[function(require,module,exports){
 module.exports = '<div class="v-field" v-class="v-field--active : isActive">\n	<label class="v-field__label" v-text="label"></label>\n	<input class="v-field__input" type="text" v-on="focus: activate, blur: deactivate" v-model="value">\n</div>\n';
 },{}],5:[function(require,module,exports){
-module.exports = '<form>\n	<v-name v-with="name"></v-name>\n	<v-address v-with="address"></v-address>\n	<v-creditcard v-with="creditcard"></v-creditcard>\n</form>\n';
+module.exports = '<form>\n	<v-name v-with="name"></v-name>\n	<v-address v-with="address"></v-address>\n	<div class="form__buttons">\n		<button>Submit</button>\n	</div>\n</form>\n';
 },{}],6:[function(require,module,exports){
 module.exports = '<v-field v-with="label: \'First Name\', value: firstname"></v-field>\n<v-field v-with="label: \'Last Name\', value: lastname"></v-field>\n';
 },{}],7:[function(require,module,exports){

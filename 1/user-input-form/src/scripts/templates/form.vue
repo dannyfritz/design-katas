@@ -1,5 +1,7 @@
 <form>
 	<v-name v-with="name"></v-name>
 	<v-address v-with="address"></v-address>
-	<v-creditcard v-with="creditcard"></v-creditcard>
+	<div class="form__buttons">
+		<button>Submit</button>
+	</div>
 </form>
