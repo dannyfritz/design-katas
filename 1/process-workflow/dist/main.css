@@ -1,0 +1,117 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700,300);
+.v-field__label {
+  top: 1.8rem;
+  display: block;
+  position: absolute;
+  pointer-events: none;
+  padding: 0.5rem 1rem;
+  color: #cdcbcb;
+  transition: top 0.2s ease,
+		color 0.1s ease;
+}
+.v-field--active .v-field__label {
+  top: 0.1rem;
+  color: #343232;
+}
+.v-field__input {
+  width: 100%;
+  display: block;
+  outline: solid 1px #999999;
+  outline-offset: 0;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  border: none;
+  border-radius: 0;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  transition: box-shadow 0.2s ease;
+}
+.v-field__input:focus {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+v-textfield {
+  display: inline-block;
+  position: relative;
+  padding-top: 2rem;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+v-textfield:last-child {
+  padding-right: 0;
+}
+v-numberfield {
+  display: inline-block;
+  position: relative;
+  padding-top: 2rem;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+v-numberfield:last-child {
+  padding-right: 0;
+}
+v-progressbar {
+  display: block;
+}
+.v-progressbar {
+  background-color: #adc2eb;
+}
+.v-progressbar__bar {
+  background-color: #4d88ff;
+  height: 0.5rem;
+  display: inline-block;
+  transition: width 0.3s ease;
+}
+.process__frame {
+  overflow: hidden;
+}
+.process__steps {
+  position: relative;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  transition: left 0.5s ease;
+}
+.process__steps > * {
+  width: 100vw;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+html {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-size: 18px;
+  font-family: 'Open Sans', sans-serif;
+}
+body {
+  background-color: #ffffff;
+}
+button {
+  padding: 0.5rem 1rem;
+  margin: 0;
+  border: none;
+  border-radius: 0;
+  outline: solid 1px #999999;
+  background-color: #ffffff;
+  font-size: 1rem;
+  transition: box-shadow 0.1s ease, background-color 0.1s ease;
+}
+button:active {
+  background-color: #cccccc;
+}
+button:hover,
+button:focus {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+/*# sourceMappingURL=main.css.map */
