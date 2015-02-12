@@ -14,7 +14,6 @@ const Process = Vue.extend({
 		};
 	},
 	ready: function () {
-		this.hideSteps();
 		this.showStep(this.step);
 	},
 	computed: {
@@ -29,17 +28,10 @@ const Process = Vue.extend({
 		}
 	},
 	methods: {
-		hideSteps: function () {
-			$(this.$el)
-				.find('[data-hook~=steps]')
-				.children()
-				.css('left', '100vw');
-		},
 		showStep: function (step) {
 			$(this.$el)
 				.find('[data-hook~=steps]')
-				.children(':nth-child(' + (step + 1) + ')')
-				.css('left', '0vw');
+				.css('left', -step * 100 + 'vw');
 		},
 		totalSteps: function () {
 			return $(this.$el).find('[data-hook~=steps]').children().length;
@@ -52,7 +44,6 @@ const Process = Vue.extend({
 				return;
 			}
 			this.step = step;
-			this.hideSteps();
 			this.showStep(this.step);
 		},
 		next: function () {
