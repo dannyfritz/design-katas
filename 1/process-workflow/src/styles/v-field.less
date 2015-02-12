@@ -1,0 +1,33 @@
+.v-field__label {
+	top: 1.8rem;
+	display: block;
+	position: absolute;
+	pointer-events: none;
+	padding: 0.5rem 1rem;
+	color: hsl(0, 2%, 80%);
+	transition:
+		top 0.2s ease,
+		color 0.1s ease;
+}
+
+	.v-field--active .v-field__label {
+		top: 0.1rem;
+		color: hsl(0, 2%, 20%);
+	}
+
+.v-field__input {
+	width: 100%;
+	display: block;
+	outline: solid 1px hsl(0, 0%, 60%);
+	outline-offset: 0;
+	box-shadow: @box-shadow-depth-1;
+	border: none;
+	border-radius: 0;
+	padding: 0.5rem 1rem;
+	font-size: 1rem;
+	transition: box-shadow 0.2s ease;
+}
+
+	.v-field__input:focus {
+		box-shadow: @box-shadow-depth-2;
+	}
