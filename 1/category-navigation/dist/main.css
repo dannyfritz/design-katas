@@ -1,0 +1,99 @@
+@import url(//fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,700);
+@import url(//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css);
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+html {
+  font-family: "Open Sans", sans;
+  font-size: 18px;
+  box-sizing: border-box;
+  background-color: #2a2222;
+}
+button {
+  color: #ffffff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  background: #2196f3;
+  border: none;
+  outline: none;
+  padding: 0.5em 1em;
+  transition: box-shadow 0.2s ease;
+}
+button:hover {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+v-categories {
+  display: block;
+  padding: 2rem;
+}
+v-categories ul {
+  list-style: none;
+  cursor: pointer;
+}
+v-categories ul li {
+  padding: 0.5rem;
+}
+.v-slider__control,
+.v-slider__content,
+main {
+  transition: -webkit-transform 0.5s ease, opacity 0.3s ease;
+  transition: transform 0.5s ease, opacity 0.3s ease;
+}
+.v-slider__control {
+  position: absolute;
+  top: 0;
+  z-index: 100;
+}
+.v-slider__content {
+  position: absolute;
+  top: 0;
+  z-index: 100;
+  opacity: 0.8;
+  width: 300px;
+  height: 100vh;
+  box-shadow: none;
+  background-color: #ffffff;
+  -webkit-transform: translateX(-300px);
+          transform: translateX(-300px);
+}
+.v-slider__content h3 {
+  margin: 0;
+  padding: 0.5em;
+  font-size: 2rem;
+  text-align: center;
+  color: #757575;
+  border-bottom: solid 1px #e0e0e0;
+}
+.v-slider--open .v-slider__control {
+  -webkit-transform: translateX(300px);
+          transform: translateX(300px);
+}
+.v-slider--open .v-slider__content {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  opacity: 1.0;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+}
+.v-slider--open + main {
+  -webkit-transform: scale(0.7) translateX(100px);
+          transform: scale(0.7) translateX(100px);
+  opacity: 0.8;
+}
+nav {
+  position: absolute;
+}
+main {
+  background-color: #ffffff;
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 4em;
+  overflow-y: scroll;
+}
+
+/*# sourceMappingURL=main.css.map */
