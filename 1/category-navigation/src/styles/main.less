@@ -1,0 +1,32 @@
+@import url(//fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,700);
+@import url(//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css);
+@import "material-color";
+@import "material-shadow";
+*, *:before, *:after {
+	margin: 0;
+	padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+	font-family: "Open Sans", sans;
+	font-size: 18px;
+	box-sizing: border-box;
+	background-color: hsl(0, 10%, 15%);
+}
+
+button {
+	color: hsl(0, 0%, 100%);
+	box-shadow: @box-shadow-1;
+	background: @clr-blue-500;
+	border: none;
+	outline: none;
+	padding: 0.5em 1em;
+	transition: box-shadow 0.2s ease;
+}
+button:hover {
+	box-shadow: @box-shadow-2;
+}
+@import "v-categories";
+@import "v-slider";
+@import "home";
